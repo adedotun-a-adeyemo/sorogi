@@ -1,8 +1,12 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:sorogi/screens/dashboard_screen.dart';
 import 'package:sorogi/screens/login_screen.dart';
 import 'package:sorogi/screens/signup_screen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(Sorogi());
 }
 
@@ -15,6 +19,7 @@ class Sorogi extends StatelessWidget {
       routes: {
         LoginScreen.id: (context) => LoginScreen(),
         SignupScreen.id: (context) => SignupScreen(),
+        DashboardScreen.id: (context) => DashboardScreen(),
       },
     );
   }

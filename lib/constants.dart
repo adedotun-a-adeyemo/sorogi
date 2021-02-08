@@ -18,6 +18,16 @@ const kTextFieldDecoration = InputDecoration(
     borderRadius: BorderRadius.all(Radius.circular(12.0)),
   ),
 );
+const kLabelTextStyle = TextStyle(
+  fontSize: 25.0,
+  fontWeight: FontWeight.bold,
+  color: kMainThemeColor,
+);
+
+const kNumberTextStyle = TextStyle(
+  fontSize: 20.0,
+  color: kPrimaryColor,
+);
 
 // #2C9FB5
 // #DB5A67

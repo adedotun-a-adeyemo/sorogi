@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sorogi/constants.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 
 class TileContent extends StatelessWidget {
   final IconData icon;
@@ -16,23 +17,39 @@ class TileContent extends StatelessWidget {
       children: [
         Icon(
           icon,
-          size: 80.0,
+          size: 60.0,
           color: iconColor,
         ),
         SizedBox(
-          height: 15.0,
+          height: 10.0,
         ),
-        Text(
+        AutoSizeText(
           label1,
           style: kLabelTextStyle,
+          maxLines: 2,
+          minFontSize: 20.0,
+          group: labelGroup,
+          textAlign: TextAlign.center,
         ),
         SizedBox(
-          height: 15.0,
+          height: 10.0,
         ),
-        Text(
+        AutoSizeText(
           label2,
           style: kNumberTextStyle,
-        )
+          minFontSize: 15.0,
+          maxLines: 1,
+          group: numberGroup,
+          textAlign: TextAlign.center,
+        ),
+        // FittedBox(
+        //   fit: BoxFit.contain,
+        //   child: Text(
+        //     label2,
+        //     style: kNumberTextStyle,
+        //     textAlign: TextAlign.center,
+        //   ),
+        // )
       ],
     );
   }

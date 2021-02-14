@@ -76,6 +76,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 label: 'Sign Up',
                 color: kPrimaryColor,
               ),
+              SizedBox(
+                height: 25.0,
+              ),
             ],
           ),
         ),

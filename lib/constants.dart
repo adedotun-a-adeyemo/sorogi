@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
 const kMainThemeColor = Color(0xFF0369C7);
@@ -19,15 +20,18 @@ const kTextFieldDecoration = InputDecoration(
   ),
 );
 const kLabelTextStyle = TextStyle(
-  fontSize: 25.0,
+  fontSize: 20.0,
   fontWeight: FontWeight.bold,
   color: kMainThemeColor,
 );
 
 const kNumberTextStyle = TextStyle(
-  fontSize: 20.0,
+  fontSize: 15.0,
   color: kPrimaryColor,
 );
+
+var labelGroup = AutoSizeGroup();
+var numberGroup = AutoSizeGroup();
 
 // #2C9FB5
 // #DB5A67

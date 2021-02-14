@@ -41,7 +41,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
         // crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Container(
-            padding: EdgeInsets.all(100.0),
+            padding: EdgeInsets.all(75.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -56,7 +56,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           fontWeight: FontWeight.w400),
                     ),
                     SizedBox(
-                      height: 25.0,
+                      height: 15.0,
                     ),
                     CircleAvatar(
                       child: Icon(
@@ -86,7 +86,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
               child: Column(
                 children: [
                   SizedBox(
-                    height: 25.0,
+                    height: 10.0,
                   ),
                   Expanded(
                     child: Row(

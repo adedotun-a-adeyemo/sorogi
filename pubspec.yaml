@@ -23,9 +23,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  firebase_core: "^0.7.0"
-  firebase_auth: "^0.20.0+1"
-  cloud_firestore: "^0.16.0"
+  firebase_core: ^0.7.0
+  firebase_auth: ^0.20.0+1
+  flutter_blue: ^0.6.2
+  cloud_firestore: ^0.16.0
   font_awesome_flutter: ^8.11.0
   auto_size_text: ^2.1.0
 
